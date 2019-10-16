@@ -4,16 +4,15 @@ exports.up = function(knex) {
     col
     .increments();
     col
-    .string('username',50)
+    .string('username',128)
     .notNullable()
     .unique();
     col
-    .string('password', 50)
+    .string('password', 128)
     .notNullable()
   })
 };
 
-exports.down = function(knex) {
+exports.down = function(knex, Promise) {
     return knex.schema.dropTableIfExists('users')
-  
 };

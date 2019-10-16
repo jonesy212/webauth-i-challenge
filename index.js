@@ -4,7 +4,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 
 const db = require('./data/db-config')
-const Users = require('./users')
+const Users = require('./users/user-model')
 
 const server = express();
 

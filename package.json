@@ -4,7 +4,8 @@
   "description": "## Topics",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon "
+    "start": "nodemon index.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,11 @@
   },
   "homepage": "https://github.com/jonesy212/webauth-i-challenge#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "knex": "^0.19.5",
     "pg": "^7.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
